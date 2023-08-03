@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 0.5rem;
+    height: 10px;
+    background-color:red;
+    border-radius: 2rem;
+}
+
+  
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #a17fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.container {
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #0000004d;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+/* formulário */
+  
+.title{
+    background-color: #eee;
+    padding: 20px;
+}
+
+
+.form{
+    padding: 20px;
+}
+  
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+  
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+  
+.form-control input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+  
+.form-control i{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+  
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+  
+.form button{
+    background-color: #8d66f8;
+    border: 2px solid #00ffd5;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s ease;
+}
+
+.form button:hover{
+    background-color: #139a8e;
+    transform: scale(1.02);
+}
+
+  /* Erro e Successo */
+.form-control.success input{
+    border-color: #2ecc71;
+}
+  
+.form-control.error input{
+    border-color: #e74c3c;
+  }
+  
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+  }
+  
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+  
+.form-control.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+/* redes sociais */
+.socialmedia .sci{
+    background-color: #896bda;
+    border-radius: 1.5rem;
+    position: fixed;
+    top: 50%;
+    right: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    margin: .5rem 0;
+    transform: scale(0.6);
+}
+
+.sci li a img{
+    width: 5rem;
+    transition: .5s ease;
+}
+
+.sci li a img:hover{
+    transform: scale(1.2);
+}
